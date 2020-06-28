@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="bakwas.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+   
+     <style>
+        .Menu{
+            width:99.75%;
+            height:140px;
+        }
+        ul{
+             list-style:none;
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color:white;
+        }
+        li{
+            float: left;
+             font-size:22px;
+             margin-top:55px;
+             margin-left:15px;
+        }
+        li a{
+            text-decoration:none;
+            color:dimgray;
+            padding:10px;
+        }
+        li a:hover{
+            color:black;
+        }
+        .button{
+            text-decoration:none;
+            background-color:transparent;
+            cursor: pointer;
+             border: none;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 22px;
+            color:black;
+        }
+        .button:hover{
+            color:dimgray;
+        }
+        .butt{
+             text-decoration:none;
+            background-color:transparent;
+            cursor: pointer;
+             border: none;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 22px;
+            color:black;
+            margin-left:5px;
+        }
+        .footerr {
+    width: 99.75%;
+    height: 300px;
+    background-color: black;
+    border: 1px solid gray;
+    border-top-color: aqua;
+    overflow: hidden;
+    margin-top: 80px;
+    position: absolute;
+}
+.fo {
+    color: whitesmoke;
+    margin-left: 740px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 60px;
+    text-align: left;
+}
+
+    .fo tr {
+        cursor: pointer;
+    }
+
+    .fo th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white;
+        padding-left: 3px;
+    }
+
+
+    .fo tr:hover {
+        color: aqua;
+    }
+.fa {
+    padding: 24px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+   margin-bottom:10px;
+    border-radius: 50%;
+   margin-top:27px;
+   margin-left:2px;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+        
+ 
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+           <div class="Menu">
+             
+               <img style="float:left;height:134px;padding:4px;padding-left:12px;" src="image/ammara.pngv%201.png" />
+               <ul >
+                   
+                    <li><a href="home.aspx">Home</a></li>
+                   <li><a href="Theme.aspx">Theme</a></li>
+                   <li><a href="library.aspx">Library</a></li>
+                   <li><a href="home.aspx">Contact</a></li>
+                   <li><a href="home.aspx">About</a></li>
+               </ul>
+               <div style="float:right; margin-right:40px; margin-top:0;">
+                 <asp:Button ID="Button1" runat="server" Text="Login"  Cssclass="button" PostBackUrl="~/login.aspx"/>
+                   
+                <asp:Button ID="Button2" runat="server" Text="Register" CssClass="butt" PostBackUrl="~/Register.aspx" /></div>
+
+           </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+                 <div class="footerr">
+                
+                      <p style="color:whitesmoke;margin-left:50px;margin-top:60px;float:left;font-size:18px;">
+           Orchard Planet is a platform where you can find the site,<br /> plot the plants that would contribute to our common goal <br /> clean and green pakistan.it helps us to create a suitable <br />enviornment for ourself and new generation.
+       </p>
+<table class="fo" >
+<tr >
+<th > About us</th >
+<th > Legal Stuff</th >
+<th > Help</th >
+</tr >
+<tr >
+<td > Meat the team</td >
+<td > Term of use</td >
+<td > Knowledge Base</td >
+</tr >
+<tr >
+<td > Blog</td >
+<td > Privacy Policy</td >
+<td > Support</td >
+</tr >
+<tr >
+<td > About us</td >
+<td > Cookie Policy</td >
+<td > </td >
+</tr >
+</table >
+                <div class="bootstrap" style="margin-top:40px;margin-left:85%;">
+                <a href="#" class="fa fa-facebook"></a>
+       <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+
+
+</div>
+
+
+        </div>
+    </form>
+</body>
+</html>
